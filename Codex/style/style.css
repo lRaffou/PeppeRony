@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navTop a {
+    width: 40vw;
+}
+.navTop img {
+    width: 100%;
+}
+.videoPrez video {
+    width: 100vw;
+}
