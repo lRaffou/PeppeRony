@@ -5,11 +5,12 @@
 }
 .navTop {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     z-index: 100;
+    width: 100vw;
 }
 .navTop a {
     width: 40vw;
@@ -20,3 +21,30 @@
 .videoPrez video {
     width: 100vw;
 }
+.navBottom {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background: #313138;
+    padding: 2% 4% 2% 4%;
+    display: flex;
+    justify-content: center;
+}
+.navBottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+.navBottom a, .navBottom img{
+    /* width: 100%; */
+    height: 5vh;
+    text-decoration: none;
+    color: #fff;
+}
+/* .navBottom img {
+    width: 100%;
+    height: 100%;
+} */
+
