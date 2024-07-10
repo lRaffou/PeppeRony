@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "bukhari";
+    src: url(/Fonts/Bukhari_Script.ttf);
+}
 .navTop {
     display: flex;
     align-items: center;
@@ -29,6 +33,8 @@
     padding: 2% 4% 2% 4%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
 }
 .navBottom ul {
     display: flex;
@@ -47,4 +53,24 @@
     width: 100%;
     height: 100%;
 } */
+.presentation {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-family: "bukhari";
+}
+.presentation img {
+    width: 40vw;
+}
+.mainAccueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
