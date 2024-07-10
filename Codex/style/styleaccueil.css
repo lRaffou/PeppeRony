@@ -4,7 +4,6 @@ body{
     margin: 0;
     color: #FFF0F0;
 }
-<<<<<<< HEAD
 
 @font-face {
     font-family: Bukhari;
@@ -16,13 +15,6 @@ h1, h2, h3{
 }
 
 .enTete{
-=======
-@font-face {
-    font-family: "bukhari";
-    src: url(/Fonts/Bukhari_Script.ttf);
-}
-.navTop {
->>>>>>> aa0079ec029467833f68c1a66a0aaed135db7fa1
     display: flex;
     justify-content: space-around;
 }
@@ -181,7 +173,6 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
 
 .inscription input, .inscription button{
     width: 75%;
@@ -280,39 +271,6 @@ button:hover {
   }
 
   .nom{
-    width: 105%;
+    width: 50%;
   }
 }
-=======
-.navBottom a, .navBottom img{
-    /* width: 100%; */
-    height: 5vh;
-    text-decoration: none;
-    color: #fff;
-}
-/* .navBottom img {
-    width: 100%;
-    height: 100%;
-} */
-.presentation {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    font-family: "bukhari";
-}
-.presentation img {
-    width: 40vw;
-}
-.mainAccueil {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
->>>>>>> aa0079ec029467833f68c1a66a0aaed135db7fa1
