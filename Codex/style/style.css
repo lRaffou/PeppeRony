@@ -1,52 +1,276 @@
-* {
+body{
+    font-family: Bukhari;
+    background-color: #313138;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color: #FFF0F0;
 }
-.navTop {
+
+@font-face {
+    font-family: Bukhari;
+    src: url(../../../../../Clem/Downloads/bukhari_script/Bukhari\ Script.ttf);
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.enTete{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100vw;
+    justify-content: space-around;
 }
-.navTop a {
-    width: 40vw;
+
+.enTete > img{
+    width: 100%;
+    margin-left: 5%;
 }
-.navTop img {
+
+.swiper {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide > img{
     width: 100%;
 }
-.videoPrez video {
-    width: 100vw;
+
+.swiper-button-prev, .swiper-button-next{
+    color:#921d10 !important;
 }
-.navBottom {
-    overflow: hidden;
+
+.caroussel{
+    margin-top: 5%;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+a, a:visited{
+    color:#FFF0F0;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+a:hover{
+    color: #921d10;
+}
+
+nav{
+    display: none;
+    margin-top: 7%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+
+.bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
-    background: #313138;
-    padding: 2% 4% 2% 4%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 40px 40px 0 0;
+    z-index: 101;
+    background-color: #921d10b6;
 }
-.navBottom ul {
+
+img[alt^="bar"]{
+    width: 50px;
+    height: 50px;
+}
+
+header > img, footer > img{
+    position: relative;
+    top: 0;
+    z-index: 100;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.videoPrez{
+    position: absolute;
+    top: 0;
+}
+
+video{
+    width: 100%;
+}
+
+footer{
+    background-color: #921d10;
+    margin-bottom: 8vh;
+}
+
+.formulaire{
+    width: 50%;
+    background-color: #313138;
+    border-radius: 5%;
+    padding: 0 5% 2% 5%;
+    margin: 0 0 2% 1%;
+}
+
+.footer{
     display: flex;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nom > input{
+    width: 45%;
+}
+
+form input, form textarea{
+    margin-bottom: 2%;
+}
+
+input, textarea{
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #313138;
+    margin: 0 5px;
+    color: #fff0f0;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #921d10;
+}
+
+.reseaux{
+    display: flex;
+    filter: invert();
+    justify-content: space-around;
+}
+
+.reseaux > img{
+    width: 30px;
+}
+
+.inscription{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    width: 100%;
 }
-.navBottom a, .navBottom img{
-    /* width: 100%; */
-    height: 5vh;
-    text-decoration: none;
-    color: #fff;
-}
-/* .navBottom img {
-    width: 100%;
-    height: 100%;
-} */
 
+.inscription input, .inscription button{
+    width: 75%;
+}
+
+.inscription input{
+    margin-bottom: 5%;
+}
+
+.barre, .barreDeux{
+    height: 10px;
+    background-color: #921d10;
+}
+
+.barreDeux{
+    margin-top: 10px;
+}
+
+@media screen and (min-width : 1024px) {
+  .bar{
+    display: none;
+  }
+
+  nav{
+    display: block;
+  }
+
+  header > img, footer > img{
+    width: 20%;
+    margin-left: 40%;
+  }
+
+  video{
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .enTete > img{
+    width: 20%;
+    margin-top: 5%;
+  }
+
+  .enTete p{
+    font-size: xx-large;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  .swiper{
+    height: 600px;
+  }
+
+  .swiper-wrapper{
+    margin-left: 25%;
+  }
+
+  .swiper-slide img{
+    width: 50%;
+    height: 600px;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulaire{
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 25px;
+  }
+
+  .reseaux{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin-left: 37%;    
+  }
+
+  .inscription{
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 25%;    
+  }
+
+  .inscription input{
+    margin-top: 5%;
+    padding: 5px 0 5px 0;
+  }
+
+.inscription input, .inscription button{
+    width: 20%;
+  }
+
+  .nom{
+    width: 105%;
+  }
+}
