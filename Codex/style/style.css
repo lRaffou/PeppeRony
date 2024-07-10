@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "bukhari";
+    src: url(/Fonts/Bukhari_Script.ttf);
+}
 .navTop {
     display: flex;
     align-items: center;
@@ -49,4 +53,19 @@
     width: 100%;
     height: 100%;
 } */
+.presentation {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-family: "bukhari";
+}
+.presentation img {
+    width: 40vw;
+}
+.mainAccueil {
+    display: flex;
+    justify-content: center;
+}
 
