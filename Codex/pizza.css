@@ -72,9 +72,88 @@ button:hover {
     padding: 20px 5px;
 }
 
-/*@media (min-width : 425px){
-    A remplir pour passer un nav bar version Desktop !
-}*/
-
+@media screen and (min-width : 1024px) {
+    .bar{
+      display: none;
+    }
+  
+    nav{
+      display: block;
+    }
+  
+    header > img, footer > img{
+      width: 20%;
+      margin-left: 40%;
+    }
+  
+    video{
+      width: 50%;
+      margin-left: 25%;
+    }
+  
+    .enTete > img{
+      width: 20%;
+      margin-top: 5%;
+    }
+  
+    .enTete p{
+      font-size: xx-large;
+    }
+  
+    h1{
+      font-size: 50px;
+    }
+  
+    .swiper{
+      height: 600px;
+    }
+  
+    .swiper-wrapper{
+      margin-left: 25%;
+    }
+  
+    .swiper-slide img{
+      width: 50%;
+      height: 600px;
+    }
+  
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .formulaire{
+      width: 50%;
+      margin-left: 20%;
+      border-radius: 25px;
+    }
+  
+    .reseaux{
+      display: flex;
+      justify-content: space-around;
+      width: 25%;
+      margin-left: 37%;    
+    }
+  
+    .inscription{
+      width: 50%;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 25%;    
+    }
+  
+    .inscription input{
+      margin-top: 5%;
+      padding: 5px 0 5px 0;
+    }
+  
+  .inscription input, .inscription button{
+      width: 20%;
+    }
+  
+    .nom{
+      width: 50%;
+    }
+  }
 
 
