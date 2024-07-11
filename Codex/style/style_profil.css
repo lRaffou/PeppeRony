@@ -5,19 +5,52 @@ body{
     color: #FFF0F0;
 }
 
+header{
+    margin-left: 25% ;
+    width: 50%;
+    background-image: url(../Img/pizzacoulante.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
 @font-face {
     font-family: Bukhari;
-    src: url(../../../../../Clem/Downloads/bukhari_script/Bukhari\ Script.ttf);
+    src: url(../Fonts/Bukhari_Script.ttf);
 }
 
 .bar{
     display: flex;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     z-index: 100;
     background-color: #921d10b6;
 }
+nav ul{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #921d10b6;
+    top: 0;
+    z-index: 10000000;
+}
+
+a, a:visited{
+    color:#FFF0F0;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+a:hover{
+    color: #921d10;
+}
+
+a > img{
+    height: 50px;
+}
+
 
 img[alt^="bar"]{
     width: 50px;
@@ -29,10 +62,21 @@ header{
     justify-content: center;
 }
 
-header > img{
-    width: 75%;
+main > img{
+    width: 25%;
+    margin-left: 37.5%;
 }
 
 .information{
     text-align: center
+}
+
+@media screen and (min-width: 1024px) {
+    .bar{
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+      }
 }

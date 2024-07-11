@@ -7,7 +7,7 @@ body{
 
 @font-face {
     font-family: Bukhari;
-    src: url(../../../../../Clem/Downloads/bukhari_script/Bukhari\ Script.ttf);
+    src: url(../Fonts/Bukhari_Script.ttf);
 }
 
 h1, h2, h3{
@@ -37,6 +37,12 @@ h1, h2, h3{
     color:#921d10 !important;
 }
 
+img[alt^=icon]{
+    filter: invert();
+    width: 40px;
+    height: 40px;
+}
+
 .caroussel{
     margin-top: 5%;
 }
@@ -58,9 +64,14 @@ a:hover{
     color: #921d10;
 }
 
+.contactPizza{
+    display: flex;
+    justify-content: space-around;
+}
+
 nav{
     display: none;
-    margin-top: 7%;
+    margin-top: 10%;
 }
 
 ul{
@@ -68,6 +79,7 @@ ul{
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
+    background-color: #921d10b6;
 }
 
 
@@ -87,7 +99,7 @@ img[alt^="bar"]{
     height: 50px;
 }
 
-header > img, footer > img{
+header > img{
     position: relative;
     top: 0;
     z-index: 100;
@@ -104,46 +116,6 @@ video{
     width: 100%;
 }
 
-footer{
-    background-color: #921d10;
-    margin-bottom: 8vh;
-}
-
-.formulaire{
-    width: 50%;
-    background-color: #313138;
-    border-radius: 5%;
-    padding: 0 5% 2% 5%;
-    margin: 0 0 2% 1%;
-}
-
-.footer{
-    display: flex;
-}
-
-.message{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nom{
-    display: flex;
-    justify-content: space-around;
-}
-
-.nom > input{
-    width: 45%;
-}
-
-form input, form textarea{
-    margin-bottom: 2%;
-}
-
-input, textarea{
-    border-radius: 10px;
-}
-
 button{
     border-radius: 5px;
     background-color: #313138;
@@ -157,30 +129,6 @@ button:hover {
     background-color: #921d10;
 }
 
-.reseaux{
-    display: flex;
-    filter: invert();
-    justify-content: space-around;
-}
-
-.reseaux > img{
-    width: 30px;
-}
-
-.inscription{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inscription input, .inscription button{
-    width: 75%;
-}
-
-.inscription input{
-    margin-bottom: 5%;
-}
 
 .barre, .barreDeux{
     height: 10px;
@@ -189,6 +137,11 @@ button:hover {
 
 .barreDeux{
     margin-top: 10px;
+}
+
+#map{ 
+    height: 200px;
+    z-index: 10;
 }
 
 @media screen and (min-width : 1024px) {
@@ -200,7 +153,7 @@ button:hover {
     display: block;
   }
 
-  header > img, footer > img{
+  header > img{
     width: 20%;
     margin-left: 40%;
   }
@@ -236,41 +189,14 @@ button:hover {
     height: 600px;
   }
 
-  .footer{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formulaire{
+  #map{
     width: 50%;
-    margin-left: 20%;
-    border-radius: 25px;
+    margin-left: 25%;
   }
 
-  .reseaux{
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    margin-left: 37%;    
-  }
-
-  .inscription{
+  .contactPizza{
     width: 50%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 25%;    
-  }
-
-  .inscription input{
-    margin-top: 5%;
-    padding: 5px 0 5px 0;
-  }
-
-.inscription input, .inscription button{
-    width: 20%;
-  }
-
-  .nom{
-    width: 50%;
+    margin-left: 25%;
+    justify-content: space-evenly;
   }
 }

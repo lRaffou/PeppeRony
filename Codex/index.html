@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../Codex/style/styleaccueil.css"/>
+        <link rel="stylesheet" href="style/styleaccueil.css"/>
         <title>Chez la Pépée Rony</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style/footer.css">
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./JS/script.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> 
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>  
     </head>
     <body>
         <header>
@@ -19,14 +22,13 @@
              </section>
              <nav>
                  <ul>
-                     <li><a href="../index.html">Accueil</a></li>
-                     <li><a href="../Codex/pizza.html">Pizzas</a></li>
-                     <li><a href="../Codex/pages/menu.html">Menus</a></li>
-                     <li><a href="../Codex/reservation.html">Réservations</a></li>
-                     <li><a href="../Codex/pages/profil.html"><img src="../Codex/Img/icons8-compte-96.png" alt="icone image"></a></li>
+                     <li><a href="">Accueil</a></li>
+                     <li><a href="./pages/pizza.html">Pizzas</a></li>
+                     <li><a href="./pages/menu.html">Menus</a></li>
+                     <li><a href="./pages/reservation.html">Réservations</a></li>
+                     <li><a href="./pages/profil.html"><img src="../Codex/Img/icons8-compte-96.png" alt="iconImage"></a></li>
                  </ul>
              </nav>
-             <article class="barre"></article>
         </header>
         <main>
             <h1>Chez La Pépée Rony</h1>
@@ -63,15 +65,25 @@
   </div>  
             </section>
             <section class="bar">
-                <a href="../index.html"><img src="../Codex/Img/icons8-accueil-150.png" alt="bar_accueil"/></a>
-                <a href="pizza.html"><img src="../Codex/Img/icons8-pizza-80.png" alt="bar_pizza"/></a>
-                <a href="reservation"><img src="../Codex//Img/icons8-shopping-basket-100.png" alt="bar_réservation"/></a>
-                <a href=""><img src="../Codex/Img/icons8-couverts-100.png" alt="bar_menu"/></a>
-                <a href="profil.html"><img src="../Codex//Img/icons8-compte-96.png" alt="bar_compte"/></a>
+                <a href=""><img src="./Img/icons8-accueil-150.png" alt="bar_accueil"/></a>
+                <a href="./pages/pizza.html"><img src="./Img/icons8-pizza-80.png" alt="bar_pizza"/></a>
+                <a href="./pages/reservation.html"><img src=".//Img/icons8-shopping-basket-100.png" alt="bar_réservation"/></a>
+                <a href="./pages/menu.html"><img src="./Img/icons8-couverts-100.png" alt="bar_menu"/></a>
+                <a href="./pages/profil.html"><img src="./Img/icons8-compte-96.png" alt="bar_compte"/></a>
+            </section>
+            <h2>Où nous joindre ?</h2>
+            <section class="contactPizza">
+                <img src="./Img/telephone.png" alt="iconTel">
+                <p>05 26 26 26 26</p>
+                <img src="./Img/adresse.png" alt="iconAdress">
+                <p>15 rue de la Pizza 81000 Albi</p>
+
+            </section>
+            <section id="map">
             </section>
         </main>
         <footer>
-            <img src="./Img/LOGO_PIZZ.png" alt="logo Pépée Rony"/>
+            <img src="Img/LOGO_PIZZ.png" alt="logo Pépée Rony"/>
             <h2>Chez La Pépée Rony</h2>
             <section class="footer">
                 <section class="formulaire">
